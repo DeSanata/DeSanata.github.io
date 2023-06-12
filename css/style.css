@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --bg1:rgb(100, 41, 41);
+    --bg2:rgb(73, 46, 46);
+    --body: #b2b3bc;
+    --brand: #ffab76;
+    --white: #fff;
+}
+body{
+    font-family: "Inter", 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Dela Gothic One", 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+}
+img{
+    width: 100%;
+}
+section{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+/*NAVBAR*/
+.navbar{
+    background: linear-gradient(to bottom,rgb(73, 46, 46),rgba(73, 46, 46, 0.2) );
+
+}
+.navbar .navbar-nav .nav-link.active{
+    color: var(--brand);
+}
+.navbar-brand{
+    font-family: "Dela Gothic One", 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
+/*Hero*/
+#hero {
+    background: url(../img/cover_1.jpg);
+    min-height: 100vh;
+    background-position: left;
+    background-size: cover;
+   
+
+}
+#hero p {
+    color:antiquewhite;
+    size: 80px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}
+/*BTN*/
+.btn{
+    padding: 16px 36px ;
+    font-family: "Dela Gothic One", 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.4s ease;
+    border-radius: 0%;
+    
+    
+}
+.btn-brand {
+    background-color: var(--brand);
+    margin-top: 24px;
+}
+.btn-brand:hover{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+.btn-outline-brand{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+.btn-outline-brand:hover{
+    background-color: var(--brand);
+}
+.btn-primary{
+    background-color: var(--brand);
+    border-color: var(--brand);
+    margin-left: 65px;
+}
+.btn-primary:hover{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+    
+    
+}
+.btn-primarym{
+    background-color: var(--brand);
+    border-color: var(--brand);
+    margin-left: 65px;
+}
+.btn-primarym:hover{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+    
+    
+}
+.btn-outline-primary1{
+    background-color: var(--brand);
+    border-color: var(--brand);
+    margin-left: 0%;
+    
+}
+.btn-outline-primary1:hover{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+.btn-secondary{
+    background-color: var(--brand);
+    border-color: var(--brand);
+    margin-left: 0%;
+    
+}
+.btn-secondary:hover{
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+/*ABOUT*/
+#about{
+    position:relative;
+
+}
+#about::after{
+    content: "";
+    width: 25%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#about h6 {
+    color: var(--brand);
+
+}
+#about h1 {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+
+/*SERVICES*/
+#services h1{
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+#services {
+    background-color: var(--bg2);
+    
+}
+
+#services h6 {
+    color: var(--brand);
+
+}
+#services h5 {
+    color: var(--brand);
+    font-size: medium;
+
+}
+#services h3 {
+    color: var(--brand);
+    font-size: small;
+    margin-bottom: 20px;
+
+}
+
+.active-filter-btn{
+    background-color: var(--brand)!important;
+    color: #fff!important;
+    border-color: var(--brand)!important;
+}
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+.services-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+#services .card{
+    background-color: var(--bg1);
+}
+
+/*STYLISTES*/
+#stylistes h6 {
+    color: var(--brand);
+}
+#stylistes h1{
+    margin-bottom: 21px;
+}
+#stylistes .card{
+    background-color: var(--bg2);
+}
+
+
+
+/*REVIEWS*/
+#reviews h6 {
+    color: var(--brand);
+}
+#reviews h1{
+    margin-bottom: 21px;
+}
+#reviews{
+    background-color: var(--bg2);
+    
+}
+.reviews{
+    padding: 32px;
+    background-color: var(--bg1);
+    position: relative;
+    
+
+}
+.reviews .icon{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand);
+    color: var(--bg2);
+    border-radius: 100px;
+    position: absolute;
+    right: 34px;
+
+}
+.reviews img{
+    width: 60px;
+    border-radius: 100px;
+
+} 
+
+
+/* GALLERY */
+#gallery h6 {
+    color: var(--brand);
+
+}
+#gallery{
+    background-color: var(--bg1);
+    
+}
+.gallery{
+    padding: 32px;
+    background-color: var(--bg1);
+    position: relative;
+    
+
+}
+
+.gallery img{
+    width: 80%;
+} 
+/* CONTACT */
+#contact {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg2);
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+
+
+#contact .container{
+    width: 100%;
+    padding: 45px;
+    border-radius: 0;
+    
+}
+
+#contact .col-md-7{
+    padding: 20px;
+}
+#contact .col-md-5{
+    background: var(--bg1);
+    padding: 20px;
+    color: white;
+
+}
+#contact .form-control {
+    box-shadow: none ;
+}
+
+
+#contact .d-flex p{
+    font-size: 18px;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact h1{
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+#contact h6 {
+    color: var(--brand);
+
+}
+/* Booking*/
+#booking {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg1);
+}
+#booking h1 {
+    color: var(--brand);
+}
+#booking p {
+    color: var(--bg2);
+}
+
+
+
+
+
+#booking .container{
+    width: 100%;
+    padding: 45px;
+    border-radius: 0;
+    
+}
+
+#booking .col-md-7{
+    padding: 20px;
+}
+#booking .col-md-5{
+    background: var(--bg2);
+    padding: 20px;
+    color: white;
+
+}
+#booking .form-control {
+    box-shadow: none ;
+}
+
+
+#booking .d-flex p{
+    font-size: 18px;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#booking h1{
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+#booking h6 {
+    color: var(--brand);
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
